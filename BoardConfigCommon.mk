@@ -130,3 +130,14 @@ TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/rootdir/etc/fstab.qcom
 
 # Hardware
 BOARD_HARDWARE_CLASS += hardware/cyanogen/cmhw
+
+#TWRP config:
+TW_THEME := portrait_hdpi
+BOARD_SUPPRESS_SECURE_ERASE := true
+RECOVERY_SDCARD_ON_DATA := true
+TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
+TW_MAX_BRIGHTNESS := 255
+RECOVERY_GRAPHICS_USE_LINELENGTH := true
+TW_NO_SCREEN_BLANK := true
+TW_IGNORE_MAJOR_AXIS_0 := true
+TARGET_RECOVERY_INITRC := device/htc/msm8974-common/recovery/root/init.recovery.qcom.rc

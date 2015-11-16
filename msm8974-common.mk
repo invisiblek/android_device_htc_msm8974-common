@@ -114,6 +114,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/gps.conf:system/etc/gps.conf
 
+PRODUCT_PACKAGES += \
+    libgps.utils \
+    libloc_core \
+    libloc_eng \
+    gps.msm8974
+
 # Graphics
 PRODUCT_PACKAGES += \
     copybit.msm8974 \
